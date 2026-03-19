@@ -10,7 +10,7 @@ ${PASSWORD}        secret_sauce
 *** Test Cases ***
 Complete Purchase Flow
 
-    Open Browser    ${URL}    ${BROWSER}    options=add_argument(--headless);add_argument(--no-sandbox);add_argument(--disable-dev-shm-usage)    
+    Open Browser    ${URL}    ${BROWSER}    options=add_argument("--headless");add_argument("--no-sandbox");add_argument("--disable-dev-shm-usage")    
     Maximize Browser Window
     Input Text   id:username    ${USERNAME}
     Input Text   id:password     ${PASSWORD}
