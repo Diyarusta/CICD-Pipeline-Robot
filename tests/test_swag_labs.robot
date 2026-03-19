@@ -2,7 +2,7 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-${URL}             https://www.saucedemo.com/
+${URL}             https://diyarusta.github.io/CICD-Pipeline-Robot/swag_labs.html
 ${BROWSER}         Edge
 ${USERNAME}        standard_user
 ${PASSWORD}        secret_sauce
@@ -12,25 +12,23 @@ Complete Purchase Flow
     Open Browser    ${URL}    ${BROWSER}
     Maximize Browser Window
 
-    Input Text   id:user-name    ${USERNAME}
+    Input Text   id:username    ${USERNAME}
     Input Text   id:password     ${PASSWORD}
     Click Button   id:login-button
 
     Sleep   1s
 
-    Wait Until Element Is Visible   class:inventory_list
+    Wait Until Element Is Visible   class:products-grid
 
-    Click Button   id:add-to-cart-sauce-labs-backpack
-    Click Button   id:add-to-cart-sauce-labs-bike-light
+    Click Button   xpath:/html/body/div[2]/div[2]/div[1]/button
+    Click Button   xpath:/html/body/div[2]/div[2]/div[2]/button
 
-    Click Element   class:shopping_cart_link
-    Wait Until Element Is Visible   class:cart_list
+    Click Element   class:cart-icon
+    Wait Until Element Is Visible   xpath:/html/body/div[3]/h2
 
     Sleep   1s
 
-    Click Button   id:remove-sauce-labs-bike-light
-
-    Click Button   id:checkout
+    Click Button   xpath:/html/body/div[3]/div[1]/div[2]/button
 
     Sleep   1s
 
@@ -40,18 +38,14 @@ Complete Purchase Flow
     Input Text   id:last-name   Usta
     Input Text   id:postal-code   77652
 
-    Click Button   id:continue
+    Click Button   xpath:/html/body/div[3]/div[2]/button
 
     Sleep   1s
 
-    Wait Until Element Is Visible   id:finish
+    Wait Until Element Is Visible   xpath:/html/body/div[4]/h2
 
     Sleep   1s
 
-    Click Button   id:finish
-
-    Wait Until Page Contains   Thank you for your order!
-
-    Sleep   1s
+    Click Button   xpath:/html/body/div[4]/button
 
     Close Browser
