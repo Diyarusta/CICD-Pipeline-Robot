@@ -1,161 +1,213 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.14.3 on win32)" generated="2026-03-19T12:22:55.170822" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.2 (Python 3.14.3 on win32)" generated="2026-03-19T12:47:16.611300" rpa="false" schemaversion="5">
 <suite id="s1" name="Test Swag Labs" source="C:\Users\Diyar.Usta\Documents\Testing and QA\robot_package\robot-testing-project\github-robot\CICD-Pipeline-Robot\tests\test_swag_labs.robot">
 <test id="s1-t1" name="Complete Purchase Flow" line="11">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-03-19T12:22:55.320752" level="INFO">Opening browser 'Edge' to base url 'https://diyarusta.github.io/CICD-Pipeline-Robot/swag_labs.html'.</msg>
+<msg time="2026-03-19T12:47:16.760321" level="INFO">Opening browser 'Chrome' to base url 'https://diyarusta.github.io/CICD-Pipeline-Robot/swag_labs.html'.</msg>
+<msg time="2026-03-19T12:48:22.366312" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2026-03-19T12:48:22.366578" level="FAIL">SessionNotCreatedException: Message: session not created: DevToolsActivePort file doesn't exist; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff607fb3045+14585]
+	chromedriver!GetHandleVerifier [0x7ff607fb30b0+145f0]
+	chromedriver!(No symbol) [0x7ff607d1db7d]
+	chromedriver!(No symbol) [0x7ff607d64476]
+	chromedriver!(No symbol) [0x7ff607d5f8c1]
+	chromedriver!(No symbol) [0x7ff607d59f69]
+	chromedriver!(No symbol) [0x7ff607dae681]
+	chromedriver!(No symbol) [0x7ff607dadee6]
+	chromedriver!(No symbol) [0x7ff607d69a18]
+	chromedriver!(No symbol) [0x7ff607d6a8f3]
+	chromedriver!GetHandleVerifier [0x7ff6082bac5d+31c19d]
+	chromedriver!GetHandleVerifier [0x7ff6082b536d+3168ad]
+	chromedriver!GetHandleVerifier [0x7ff6082d7d8a+3392ca]
+	chromedriver!GetHandleVerifier [0x7ff607fcf445+30985]
+	chromedriver!GetHandleVerifier [0x7ff607fd84dc+39a1c]
+	chromedriver!GetHandleVerifier [0x7ff607fbc634+1db74]
+	chromedriver!GetHandleVerifier [0x7ff607fbc7e6+1dd26]
+	chromedriver!GetHandleVerifier [0x7ff607fa1387+28c7]
+	KERNEL32!BaseThreadInitThunk [0x7ffb10c0e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffb114cc53c+2c]
+</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
+<arg>options=add_argument("--headless");add_argument("--no-sandbox");add_argument("--disable-dev-shm-usage")</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-03-19T12:22:55.320492" elapsed="1.741196"/>
+<status status="FAIL" start="2026-03-19T12:47:16.760051" elapsed="65.613206">SessionNotCreatedException: Message: session not created: DevToolsActivePort file doesn't exist; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff607fb3045+14585]
+	chromedriver!GetHandleVerifier [0x7ff607fb30b0+145f0]
+	chromedriver!(No symbol) [0x7ff607d1db7d]
+	chromedriver!(No symbol) [0x7ff607d64476]
+	chromedriver!(No symbol) [0x7ff607d5f8c1]
+	chromedriver!(No symbol) [0x7ff607d59f69]
+	chromedriver!(No symbol) [0x7ff607dae681]
+	chromedriver!(No symbol) [0x7ff607dadee6]
+	chromedriver!(No symbol) [0x7ff607d69a18]
+	chromedriver!(No symbol) [0x7ff607d6a8f3]
+	chromedriver!GetHandleVerifier [0x7ff6082bac5d+31c19d]
+	chromedriver!GetHandleVerifier [0x7ff6082b536d+3168ad]
+	chromedriver!GetHandleVerifier [0x7ff6082d7d8a+3392ca]
+	chromedriver!GetHandleVerifier [0x7ff607fcf445+30985]
+	chromedriver!GetHandleVerifier [0x7ff607fd84dc+39a1c]
+	chromedriver!GetHandleVerifier [0x7ff607fbc634+1db74]
+	chromedriver!GetHandleVerifier [0x7ff607fbc7e6+1dd26]
+	chromedriver!GetHandleVerifier [0x7ff607fa1387+28c7]
+	KERNEL32!BaseThreadInitThunk [0x7ffb10c0e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffb114cc53c+2c]
+</status>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-03-19T12:22:57.062299" elapsed="0.040824"/>
+<status status="NOT RUN" start="2026-03-19T12:48:22.373825" elapsed="0.000063"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-03-19T12:22:57.104381" level="INFO">Typing text 'standard_user' into text field 'id:username'.</msg>
 <arg>id:username</arg>
 <arg>${USERNAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-19T12:22:57.103686" elapsed="0.168262"/>
+<status status="NOT RUN" start="2026-03-19T12:48:22.374341" elapsed="0.000039"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-03-19T12:22:57.277651" level="INFO">Typing text 'secret_sauce' into text field 'id:password'.</msg>
 <arg>id:password</arg>
 <arg>${PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-19T12:22:57.277162" elapsed="0.117500"/>
+<status status="NOT RUN" start="2026-03-19T12:48:22.374660" elapsed="0.000029"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-03-19T12:22:57.395480" level="INFO">Clicking button 'id:login-button'.</msg>
 <arg>id:login-button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-19T12:22:57.395179" elapsed="0.077897"/>
+<status status="NOT RUN" start="2026-03-19T12:48:22.374920" elapsed="0.000027"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-03-19T12:22:58.474724" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-03-19T12:22:57.473653" elapsed="1.001244"/>
+<status status="NOT RUN" start="2026-03-19T12:48:22.375184" elapsed="0.000027"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>class:products-grid</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-03-19T12:22:58.475590" elapsed="0.037648"/>
+<status status="NOT RUN" start="2026-03-19T12:48:22.375443" elapsed="0.000025"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-03-19T12:22:58.514081" level="INFO">Clicking button 'xpath:/html/body/div[2]/div[2]/div[1]/button'.</msg>
 <arg>xpath:/html/body/div[2]/div[2]/div[1]/button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-19T12:22:58.513756" elapsed="0.070885"/>
+<status status="NOT RUN" start="2026-03-19T12:48:22.375687" elapsed="0.000024"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-03-19T12:22:58.585505" level="INFO">Clicking button 'xpath:/html/body/div[2]/div[2]/div[2]/button'.</msg>
 <arg>xpath:/html/body/div[2]/div[2]/div[2]/button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-19T12:22:58.585191" elapsed="0.060007"/>
+<status status="NOT RUN" start="2026-03-19T12:48:22.375862" elapsed="0.000022"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-03-19T12:22:58.646175" level="INFO">Clicking element 'class:cart-icon'.</msg>
 <arg>class:cart-icon</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-19T12:22:58.645891" elapsed="0.151501"/>
+<status status="NOT RUN" start="2026-03-19T12:48:22.376132" elapsed="0.000022"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath:/html/body/div[3]/h2</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-03-19T12:22:58.797929" elapsed="0.021925"/>
+<status status="NOT RUN" start="2026-03-19T12:48:22.376292" elapsed="0.000023"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-03-19T12:22:59.821442" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-03-19T12:22:58.820362" elapsed="1.001238"/>
+<status status="NOT RUN" start="2026-03-19T12:48:22.376458" elapsed="0.000025"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-03-19T12:22:59.822476" level="INFO">Clicking button 'xpath:/html/body/div[3]/div[1]/div[2]/button'.</msg>
 <arg>xpath:/html/body/div[3]/div[1]/div[2]/button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-19T12:22:59.822174" elapsed="0.061217"/>
+<status status="NOT RUN" start="2026-03-19T12:48:22.376624" elapsed="0.000022"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-03-19T12:23:00.884637" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-03-19T12:22:59.883863" elapsed="1.000923"/>
+<status status="NOT RUN" start="2026-03-19T12:48:22.376778" elapsed="0.000023"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>id:first-name</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-03-19T12:23:00.885355" elapsed="0.015546"/>
+<status status="NOT RUN" start="2026-03-19T12:48:22.376935" elapsed="0.000022"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-03-19T12:23:00.901645" level="INFO">Typing text 'Diyar' into text field 'id:first-name'.</msg>
 <arg>id:first-name</arg>
 <arg>Diyar</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-19T12:23:00.901365" elapsed="0.061565"/>
+<status status="NOT RUN" start="2026-03-19T12:48:22.377113" elapsed="0.000031"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-03-19T12:23:00.963716" level="INFO">Typing text 'Usta' into text field 'id:last-name'.</msg>
 <arg>id:last-name</arg>
 <arg>Usta</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-19T12:23:00.963424" elapsed="0.068257"/>
+<status status="NOT RUN" start="2026-03-19T12:48:22.377437" elapsed="0.000028"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-03-19T12:23:01.032782" level="INFO">Typing text '77652' into text field 'id:postal-code'.</msg>
 <arg>id:postal-code</arg>
 <arg>77652</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-19T12:23:01.032466" elapsed="0.058379"/>
+<status status="NOT RUN" start="2026-03-19T12:48:22.377907" elapsed="0.000025"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-03-19T12:23:01.091633" level="INFO">Clicking button 'xpath:/html/body/div[3]/div[2]/button'.</msg>
 <arg>xpath:/html/body/div[3]/div[2]/button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-19T12:23:01.091344" elapsed="0.058290"/>
+<status status="NOT RUN" start="2026-03-19T12:48:22.378073" elapsed="0.000022"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-03-19T12:23:02.151146" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-03-19T12:23:01.150123" elapsed="1.001210"/>
+<status status="NOT RUN" start="2026-03-19T12:48:22.378229" elapsed="0.000022"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath:/html/body/div[4]/h2</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-03-19T12:23:02.151875" elapsed="0.015700"/>
+<status status="NOT RUN" start="2026-03-19T12:48:22.378383" elapsed="0.000049"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-03-19T12:23:03.168842" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-03-19T12:23:02.168024" elapsed="1.001000"/>
+<status status="NOT RUN" start="2026-03-19T12:48:22.378571" elapsed="0.000024"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-03-19T12:23:03.169862" level="INFO">Clicking button 'xpath:/html/body/div[4]/button'.</msg>
 <arg>xpath:/html/body/div[4]/button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-19T12:23:03.169574" elapsed="0.065843"/>
+<status status="NOT RUN" start="2026-03-19T12:48:22.378728" elapsed="0.000022"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-03-19T12:23:03.235940" elapsed="2.390084"/>
+<status status="NOT RUN" start="2026-03-19T12:48:22.378881" elapsed="0.000022"/>
 </kw>
-<status status="PASS" start="2026-03-19T12:22:55.319488" elapsed="10.307080"/>
+<status status="FAIL" start="2026-03-19T12:47:16.759232" elapsed="65.619924">SessionNotCreatedException: Message: session not created: DevToolsActivePort file doesn't exist; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff607fb3045+14585]
+	chromedriver!GetHandleVerifier [0x7ff607fb30b0+145f0]
+	chromedriver!(No symbol) [0x7ff607d1db7d]
+	chromedriver!(No symbol) [0x7ff607d64476]
+	chromedriver!(No symbol) [0x7ff607d5f8c1]
+	chromedriver!(No symbol) [0x7ff607d59f69]
+	chromedriver!(No symbol) [0x7ff607dae681]
+	chromedriver!(No symbol) [0x7ff607dadee6]
+	chromedriver!(No symbol) [0x7ff607d69a18]
+	chromedriver!(No symbol) [0x7ff607d6a8f3]
+	chromedriver!GetHandleVerifier [0x7ff6082bac5d+31c19d]
+	chromedriver!GetHandleVerifier [0x7ff6082b536d+3168ad]
+	chromedriver!GetHandleVerifier [0x7ff6082d7d8a+3392ca]
+	chromedriver!GetHandleVerifier [0x7ff607fcf445+30985]
+	chromedriver!GetHandleVerifier [0x7ff607fd84dc+39a1c]
+	chromedriver!GetHandleVerifier [0x7ff607fbc634+1db74]
+	chromedriver!GetHandleVerifier [0x7ff607fbc7e6+1dd26]
+	chromedriver!GetHandleVerifier [0x7ff607fa1387+28c7]
+	KERNEL32!BaseThreadInitThunk [0x7ffb10c0e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffb114cc53c+2c]
+</status>
 </test>
-<status status="PASS" start="2026-03-19T12:22:55.173076" elapsed="10.455024"/>
+<status status="FAIL" start="2026-03-19T12:47:16.613308" elapsed="65.766581"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Test Swag Labs" id="s1" pass="1" fail="0" skip="0">Test Swag Labs</stat>
+<stat name="Test Swag Labs" id="s1" pass="0" fail="1" skip="0">Test Swag Labs</stat>
 </suite>
 </statistics>
 <errors>
