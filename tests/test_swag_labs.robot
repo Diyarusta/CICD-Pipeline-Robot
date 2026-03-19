@@ -3,15 +3,15 @@ Library    SeleniumLibrary
 
 *** Variables ***
 ${URL}             https://diyarusta.github.io/CICD-Pipeline-Robot/swag_labs.html
-${BROWSER}         Edge
+${BROWSER}         Chrome
 ${USERNAME}        standard_user
 ${PASSWORD}        secret_sauce
 
 *** Test Cases ***
 Complete Purchase Flow
-    Open Browser    ${URL}    ${BROWSER}
-    Maximize Browser Window
 
+    Open Browser    ${URL}    ${BROWSER}    options=add_argument(--headless);add_argument(--no-sandbox);add_argument(--disable-dev-shm-usage)    
+    Maximize Browser Window
     Input Text   id:username    ${USERNAME}
     Input Text   id:password     ${PASSWORD}
     Click Button   id:login-button
